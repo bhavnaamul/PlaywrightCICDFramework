@@ -1,13 +1,13 @@
 pipeline {
     agent any
 
-    // stages {
+    stages {
 
-    //     stage('Checkout') {
-    //         steps {
-    //             checkout scm
-    //         }
-    //     }
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
 
         stage('Environment') {
             steps {
@@ -33,4 +33,4 @@ stage('Install Playwright Browsers') {
             }
         }
     }
-//}
+    }

@@ -1,0 +1,1199 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/E2E",
+      "--config=Config/e2e.config.ts",
+      "--project=Chromium",
+      "--headed"
+    ],
+    "configFile": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\Config\\e2e.config.ts",
+    "rootDir": "C:/Bhavna/PlaywrightTutorial2026/MiniProjectPlaywright2026/tests/E2E",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 10
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Bhavna/PlaywrightTutorial2026/MiniProjectPlaywright2026/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 10
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Bhavna/PlaywrightTutorial2026/MiniProjectPlaywright2026/tests/E2E",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Bhavna/PlaywrightTutorial2026/MiniProjectPlaywright2026/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 10
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Bhavna/PlaywrightTutorial2026/MiniProjectPlaywright2026/tests/E2E",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Bhavna/PlaywrightTutorial2026/MiniProjectPlaywright2026/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 10
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Bhavna/PlaywrightTutorial2026/MiniProjectPlaywright2026/tests/E2E",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results/results.xml"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 10,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "e2e-login.spec.ts",
+      "file": "e2e-login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login/Logout flow",
+          "file": "e2e-login.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Negative scenario for login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7555,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-25T19:58:09.541Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\test-results\\e2e-login-Login-Logout-flow-Negative-scenario-for-login-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598480d8c8194cefa972-f439c9607b8f6863a717",
+              "file": "e2e-login.spec.ts",
+              "line": 16,
+              "column": 7
+            },
+            {
+              "title": "Login with standard_user1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 7291,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-25T19:58:09.563Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\test-results\\e2e-login-Login-Logout-flow-Login-with-standard-user1-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598480d8c8194cefa972-f6769700d3258240fa28",
+              "file": "e2e-login.spec.ts",
+              "line": 22,
+              "column": 9
+            },
+            {
+              "title": "Login with slow_user1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 6556,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-25T19:58:09.553Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\test-results\\e2e-login-Login-Logout-flow-Login-with-slow-user1-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598480d8c8194cefa972-94090f078f36e683cdd6",
+              "file": "e2e-login.spec.ts",
+              "line": 22,
+              "column": 9
+            },
+            {
+              "title": "Login with locked_user1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 6932,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-25T19:58:09.598Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\test-results\\e2e-login-Login-Logout-flow-Login-with-locked-user1-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598480d8c8194cefa972-d301e989b3bae35e3c15",
+              "file": "e2e-login.spec.ts",
+              "line": 22,
+              "column": 9
+            },
+            {
+              "title": "Login with frozen_user1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 6440,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-25T19:58:09.650Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\test-results\\e2e-login-Login-Logout-flow-Login-with-frozen-user1-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598480d8c8194cefa972-399078b2e3e2dc7e0d6d",
+              "file": "e2e-login.spec.ts",
+              "line": 22,
+              "column": 9
+            },
+            {
+              "title": "Login with overdraft_user1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 6996,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-25T19:58:09.693Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\test-results\\e2e-login-Login-Logout-flow-Login-with-overdraft-user1-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598480d8c8194cefa972-1a71355b6ab9d0699418",
+              "file": "e2e-login.spec.ts",
+              "line": 22,
+              "column": 9
+            },
+            {
+              "title": "Positive scenario for login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 8047,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-25T19:58:09.701Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\test-results\\e2e-login-Login-Logout-flow-Positive-scenario-for-login-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598480d8c8194cefa972-1d8d40f133cc17939ee6",
+              "file": "e2e-login.spec.ts",
+              "line": 28,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "e2e-Transfer.spec.ts",
+      "file": "e2e-Transfer.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Transfer Checking",
+          "file": "e2e-Transfer.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Transfer between same account",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 9886,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "*****option texts: [ \u001b[32m'Everyday Checking — $4,250.00'\u001b[39m, \u001b[32m'High-Yield Savings — $12,800.00'\u001b[39m ]\n"
+                        },
+                        {
+                          "text": "*****option texts: []\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-25T19:58:09.730Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\test-results\\e2e-Transfer-Transfer-Checking-Transfer-between-same-account-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b7f45ec10a8808001070-be3946f60e923c2fa5dc",
+              "file": "e2e-Transfer.spec.ts",
+              "line": 20,
+              "column": 7
+            },
+            {
+              "title": "Transfer between same account with amount exceeding total amount in the bank",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 8,
+                      "status": "failed",
+                      "duration": 15131,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('transfer-error-message')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('transfer-error-message')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('transfer-error-message')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('transfer-error-message')\u001b[22m\n\n    at TransferPage.errorMsg (C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\page-objects\\TransferPage.ts:89:37)\n    at C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\tests\\E2E\\e2e-Transfer.spec.ts:42:24",
+                        "location": {
+                          "file": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\page-objects\\TransferPage.ts",
+                          "column": 37,
+                          "line": 89
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\..\\page-objects\\TransferPage.ts:89\n\n\u001b[0m \u001b[90m 87 |\u001b[39m\n \u001b[90m 88 |\u001b[39m   \u001b[36masync\u001b[39m errorMsg() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39merrorMessage)\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m    |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 90 |\u001b[39m     \u001b[90m// await expect(this.errorMessage).toContainText(\u001b[39m\n \u001b[90m 91 |\u001b[39m     \u001b[90m//   'Insufficient funds. Available balance: $4,250.00',\u001b[39m\n \u001b[90m 92 |\u001b[39m     \u001b[90m// )\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\page-objects\\TransferPage.ts",
+                            "column": 37,
+                            "line": 89
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('transfer-error-message')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('transfer-error-message')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\..\\page-objects\\TransferPage.ts:89\n\n\u001b[0m \u001b[90m 87 |\u001b[39m\n \u001b[90m 88 |\u001b[39m   \u001b[36masync\u001b[39m errorMsg() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39merrorMessage)\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m    |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 90 |\u001b[39m     \u001b[90m// await expect(this.errorMessage).toContainText(\u001b[39m\n \u001b[90m 91 |\u001b[39m     \u001b[90m//   'Insufficient funds. Available balance: $4,250.00',\u001b[39m\n \u001b[90m 92 |\u001b[39m     \u001b[90m// )\u001b[39m\u001b[0m\n\u001b[2m    at TransferPage.errorMsg (C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\page-objects\\TransferPage.ts:89:37)\u001b[22m\n\u001b[2m    at C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\tests\\E2E\\e2e-Transfer.spec.ts:42:24\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "*****option texts: [ \u001b[32m'Everyday Checking — $4,250.00'\u001b[39m, \u001b[32m'High-Yield Savings — $12,800.00'\u001b[39m ]\n"
+                        },
+                        {
+                          "text": "*****option texts: [ \u001b[32m'High-Yield Savings — $12,800.00'\u001b[39m ]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-25T19:58:09.732Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\test-results\\e2e-Transfer-Transfer-Chec-6a185-ng-total-amount-in-the-bank-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\test-results\\e2e-Transfer-Transfer-Chec-6a185-ng-total-amount-in-the-bank-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\page-objects\\TransferPage.ts",
+                        "column": 37,
+                        "line": 89
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b7f45ec10a8808001070-cdfb389233f68bcac094",
+              "file": "e2e-Transfer.spec.ts",
+              "line": 31,
+              "column": 7
+            },
+            {
+              "title": "Transfer between different account",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 9,
+                      "status": "passed",
+                      "duration": 11761,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "*****option texts: [ \u001b[32m'Everyday Checking — $4,250.00'\u001b[39m ]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-25T19:58:09.637Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\test-results\\e2e-Transfer-Transfer-Chec-93fd3-r-between-different-account-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b7f45ec10a8808001070-0b04b4eb969cf0db0ad9",
+              "file": "e2e-Transfer.spec.ts",
+              "line": 45,
+              "column": 7
+            },
+            {
+              "title": "Trnsfer money based on various 1.09",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 8734,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "*****option texts: [ \u001b[32m'Everyday Checking — $4,250.00'\u001b[39m, \u001b[32m'High-Yield Savings — $12,800.00'\u001b[39m ]\n"
+                        },
+                        {
+                          "text": "*****option texts: [ \u001b[32m'High-Yield Savings — $12,800.00'\u001b[39m ]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-25T19:58:17.290Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\test-results\\e2e-Transfer-Transfer-Chec-a17eb-money-based-on-various-1-09-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b7f45ec10a8808001070-6dcc20c7cee82855cdbd",
+              "file": "e2e-Transfer.spec.ts",
+              "line": 57,
+              "column": 9
+            },
+            {
+              "title": "Trnsfer money based on various 10",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 9522,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "*****option texts: [ \u001b[32m'Everyday Checking — $4,250.00'\u001b[39m, \u001b[32m'High-Yield Savings — $12,800.00'\u001b[39m ]\n"
+                        },
+                        {
+                          "text": "*****option texts: [ \u001b[32m'High-Yield Savings — $12,800.00'\u001b[39m ]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-25T19:58:17.361Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\test-results\\e2e-Transfer-Transfer-Chec-47bc8-r-money-based-on-various-10-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b7f45ec10a8808001070-8abf82233af198872e9b",
+              "file": "e2e-Transfer.spec.ts",
+              "line": 57,
+              "column": 9
+            },
+            {
+              "title": "Trnsfer money based on various 0.00",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 7467,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "*****option texts: [ \u001b[32m'Everyday Checking — $4,250.00'\u001b[39m, \u001b[32m'High-Yield Savings — $12,800.00'\u001b[39m ]\n"
+                        },
+                        {
+                          "text": "*****option texts: [ \u001b[32m'High-Yield Savings — $12,800.00'\u001b[39m ]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-25T19:58:17.604Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\test-results\\e2e-Transfer-Transfer-Chec-d5893-money-based-on-various-0-00-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b7f45ec10a8808001070-9b8d5698aff7b672b815",
+              "file": "e2e-Transfer.spec.ts",
+              "line": 57,
+              "column": 9
+            },
+            {
+              "title": "Trnsfer money based on various 30",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 7452,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "*****option texts: [ \u001b[32m'Everyday Checking — $4,250.00'\u001b[39m, \u001b[32m'High-Yield Savings — $12,800.00'\u001b[39m ]\n"
+                        },
+                        {
+                          "text": "*****option texts: [ \u001b[32m'High-Yield Savings — $12,800.00'\u001b[39m ]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-25T19:58:18.384Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\test-results\\e2e-Transfer-Transfer-Chec-c932b-r-money-based-on-various-30-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b7f45ec10a8808001070-ea10a9486e7bdc949d4c",
+              "file": "e2e-Transfer.spec.ts",
+              "line": 57,
+              "column": 9
+            },
+            {
+              "title": "Trnsfer money based on various 50000",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8724,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "*****option texts: [ \u001b[32m'Everyday Checking — $4,250.00'\u001b[39m, \u001b[32m'High-Yield Savings — $12,800.00'\u001b[39m ]\n"
+                        },
+                        {
+                          "text": "*****option texts: [ \u001b[32m'High-Yield Savings — $12,800.00'\u001b[39m ]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-25T19:58:18.389Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\test-results\\e2e-Transfer-Transfer-Chec-514cc-oney-based-on-various-50000-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b7f45ec10a8808001070-601a49a7f432110fb8c1",
+              "file": "e2e-Transfer.spec.ts",
+              "line": 57,
+              "column": 9
+            },
+            {
+              "title": "Trnsfer money based on various -090",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 7535,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "*****option texts: [ \u001b[32m'Everyday Checking — $4,250.00'\u001b[39m, \u001b[32m'High-Yield Savings — $12,800.00'\u001b[39m ]\n"
+                        },
+                        {
+                          "text": "*****option texts: [ \u001b[32m'High-Yield Savings — $12,800.00'\u001b[39m ]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-25T19:58:18.396Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\test-results\\e2e-Transfer-Transfer-Chec-9ff89-money-based-on-various--090-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b7f45ec10a8808001070-07ae39ace6d91bb5ece0",
+              "file": "e2e-Transfer.spec.ts",
+              "line": 57,
+              "column": 9
+            },
+            {
+              "title": "Transfer money - 1.09 - success",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 8143,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "*****option texts: [ \u001b[32m'Everyday Checking — $4,250.00'\u001b[39m, \u001b[32m'High-Yield Savings — $12,800.00'\u001b[39m ]\n"
+                        },
+                        {
+                          "text": "*****option texts: [ \u001b[32m'High-Yield Savings — $12,800.00'\u001b[39m ]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-25T19:58:18.671Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\test-results\\e2e-Transfer-Transfer-Chec-a320d-sfer-money---1-09---success-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b7f45ec10a8808001070-e055a79c1c091e02484c",
+              "file": "e2e-Transfer.spec.ts",
+              "line": 71,
+              "column": 9
+            },
+            {
+              "title": "Transfer money - 10 - success",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 7880,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "*****option texts: [ \u001b[32m'Everyday Checking — $4,250.00'\u001b[39m, \u001b[32m'High-Yield Savings — $12,800.00'\u001b[39m ]\n"
+                        },
+                        {
+                          "text": "*****option texts: []\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-25T19:58:20.536Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\test-results\\e2e-Transfer-Transfer-Checking-Transfer-money---10---success-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b7f45ec10a8808001070-d34f5f0f865f782a2eb9",
+              "file": "e2e-Transfer.spec.ts",
+              "line": 71,
+              "column": 9
+            },
+            {
+              "title": "Transfer money - 0.00 - error",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 9,
+                      "status": "passed",
+                      "duration": 6380,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "*****option texts: [ \u001b[32m'Everyday Checking — $4,250.00'\u001b[39m, \u001b[32m'High-Yield Savings — $12,800.00'\u001b[39m ]\n"
+                        },
+                        {
+                          "text": "*****option texts: [ \u001b[32m'High-Yield Savings — $12,800.00'\u001b[39m ]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-25T19:58:22.363Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\test-results\\e2e-Transfer-Transfer-Checking-Transfer-money---0-00---error-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b7f45ec10a8808001070-be57f9e2b4442ab8abcd",
+              "file": "e2e-Transfer.spec.ts",
+              "line": 71,
+              "column": 9
+            },
+            {
+              "title": "Transfer money - 30 - success",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 6289,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "*****option texts: [ \u001b[32m'Everyday Checking — $4,250.00'\u001b[39m, \u001b[32m'High-Yield Savings — $12,800.00'\u001b[39m ]\n"
+                        },
+                        {
+                          "text": "*****option texts: []\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-25T19:58:25.149Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\test-results\\e2e-Transfer-Transfer-Checking-Transfer-money---30---success-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b7f45ec10a8808001070-c47621af730810c748e2",
+              "file": "e2e-Transfer.spec.ts",
+              "line": 71,
+              "column": 9
+            },
+            {
+              "title": "Transfer money - 50000 - error",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "failed",
+                      "duration": 10036,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('transfer-error-message')\nExpected substring: \u001b[32m\"Insufficient funds. Available balance: $4,256.98.\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('transfer-error-message')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('transfer-error-message')\nExpected substring: \u001b[32m\"Insufficient funds. Available balance: $4,256.98.\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('transfer-error-message')\u001b[22m\n\n    at C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\tests\\E2E\\e2e-Transfer.spec.ts:90:49",
+                        "location": {
+                          "file": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\tests\\E2E\\e2e-Transfer.spec.ts",
+                          "column": 49,
+                          "line": 90
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 88 |\u001b[39m         )\n \u001b[90m 89 |\u001b[39m       } \u001b[36melse\u001b[39m \u001b[36mif\u001b[39m (transfer\u001b[33m.\u001b[39mexpectedResult \u001b[33m===\u001b[39m \u001b[32m'error'\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 90 |\u001b[39m         \u001b[36mawait\u001b[39m expect(transferPage\u001b[33m.\u001b[39merrorMessage)\u001b[33m.\u001b[39mtoContainText(\n \u001b[90m    |\u001b[39m                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 91 |\u001b[39m           transfer\u001b[33m.\u001b[39mexpectedMessage\u001b[33m,\u001b[39m\n \u001b[90m 92 |\u001b[39m         )\n \u001b[90m 93 |\u001b[39m       }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\tests\\E2E\\e2e-Transfer.spec.ts",
+                            "column": 49,
+                            "line": 90
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('transfer-error-message')\nExpected substring: \u001b[32m\"Insufficient funds. Available balance: $4,256.98.\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('transfer-error-message')\u001b[22m\n\n\n\u001b[0m \u001b[90m 88 |\u001b[39m         )\n \u001b[90m 89 |\u001b[39m       } \u001b[36melse\u001b[39m \u001b[36mif\u001b[39m (transfer\u001b[33m.\u001b[39mexpectedResult \u001b[33m===\u001b[39m \u001b[32m'error'\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 90 |\u001b[39m         \u001b[36mawait\u001b[39m expect(transferPage\u001b[33m.\u001b[39merrorMessage)\u001b[33m.\u001b[39mtoContainText(\n \u001b[90m    |\u001b[39m                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 91 |\u001b[39m           transfer\u001b[33m.\u001b[39mexpectedMessage\u001b[33m,\u001b[39m\n \u001b[90m 92 |\u001b[39m         )\n \u001b[90m 93 |\u001b[39m       }\u001b[0m\n\u001b[2m    at C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\tests\\E2E\\e2e-Transfer.spec.ts:90:49\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "*****option texts: []\n"
+                        },
+                        {
+                          "text": "*****option texts: []\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-25T19:58:25.932Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\test-results\\e2e-Transfer-Transfer-Chec-c0472-nsfer-money---50000---error-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\test-results\\e2e-Transfer-Transfer-Chec-c0472-nsfer-money---50000---error-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\tests\\E2E\\e2e-Transfer.spec.ts",
+                        "column": 49,
+                        "line": 90
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b7f45ec10a8808001070-628af145d95adbb07fbf",
+              "file": "e2e-Transfer.spec.ts",
+              "line": 71,
+              "column": 9
+            },
+            {
+              "title": "Transfer money - -090 - error",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4813,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "*****option texts: [ \u001b[32m'Everyday Checking — $4,250.00'\u001b[39m, \u001b[32m'High-Yield Savings — $12,800.00'\u001b[39m ]\n"
+                        },
+                        {
+                          "text": "*****option texts: []\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-25T19:58:26.003Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Bhavna\\PlaywrightTutorial2026\\MiniProjectPlaywright2026\\test-results\\e2e-Transfer-Transfer-Checking-Transfer-money----090---error-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b7f45ec10a8808001070-976a0135d23e88a075e9",
+              "file": "e2e-Transfer.spec.ts",
+              "line": 71,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-25T19:58:08.638Z",
+    "duration": 27803.685,
+    "expected": 20,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

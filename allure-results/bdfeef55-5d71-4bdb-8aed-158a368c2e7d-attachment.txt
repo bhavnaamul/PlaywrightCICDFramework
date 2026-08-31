@@ -1,2 +1,0 @@
-*****option texts: [ 'Everyday Checking — $4,250.00', 'High-Yield Savings — $12,800.00' ]
-*****option texts: [ 'High-Yield Savings — $12,800.00' ]

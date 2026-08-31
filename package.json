@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:e2e": "playwright test tests/E2E --config=Config/e2e.config.ts --project=Chromium ",
+    "test:e2e": "playwright test tests/E2E --config=Config/e2e.config.ts --project=chromium ",
     "tests:login": "playwright test tests/E2E/e2e-login.spec.ts --config=Config/e2e.config.ts --project=Chromium --headed",
     "tests:transfer": "playwright test tests/E2E/e2e-Transfer.spec.ts --config=Config/e2e.config.ts --project=Chromium --headed",
     "tests:billpay": "playwright test tests/E2E/e2e-PayBill.spec.ts --config=Config/e2e.config.ts --project=Chromium --headed",

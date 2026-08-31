@@ -1,3 +1,4 @@
+```groovy
 pipeline {
 
     agent any
@@ -68,8 +69,7 @@ pipeline {
                 keepAll: true,
                 reportDir: 'playwright-report',
                 reportFiles: 'index.html',
-                reportName: 'Playwright HTML Report',
-                skipSignature: true
+                reportName: 'Playwright HTML Report'
             ])
 
             archiveArtifacts(
@@ -80,3 +80,4 @@ pipeline {
         }
     }
 }
+```

@@ -1,4 +1,5 @@
 pipeline {
+
     agent any
 
     stages {
@@ -22,15 +23,60 @@ pipeline {
             }
         }
 
-stage('Install Playwright Browsers') {
-    steps {
-        bat 'npx playwright install chromium'
-    }
-}
+        stage('Lint') {
+            steps {
+                bat 'npm run lint'
+            }
+        }
+
+        stage('Typecheck') {
+            steps {
+                bat 'npx tsc --noEmit'
+            }
+        }
+
+        stage('Install Playwright Browsers') {
+            steps {
+                bat 'npx playwright install chromium'
+            }
+        }
+
         stage('Run Playwright Tests') {
             steps {
-                bat 'npx playwright test'
+                catchError(
+                    buildResult: 'FAILURE',
+                    stageResult: 'FAILURE'
+                ) {
+                    bat 'npx playwright test'
+                }
             }
         }
     }
+
+    post {
+
+        always {
+
+            junit(
+                testResults: 'test-results/junit-results.xml',
+                allowEmptyResults: true
+            )
+
+            publishHTML([
+                allowMissing: true,
+                alwaysLinkToLastBuild: true,
+                keepAll: true,
+                reportDir: 'playwright-report',
+                reportFiles: 'index.html',
+                reportName: 'Playwright HTML Report',
+                skipSignature: true
+            ])
+
+            archiveArtifacts(
+                artifacts: 'test-results/**/*',
+                allowEmptyArchive: true,
+                fingerprint: true
+            )
+        }
     }
+}

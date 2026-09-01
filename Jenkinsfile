@@ -1,7 +1,95 @@
-```groovy
+// ```groovy
+// pipeline {
+
+//     agent any
+
+//     stages {
+
+//         stage('Checkout') {
+//             steps {
+//                 checkout scm
+//             }
+//         }
+
+//         stage('Environment') {
+//             steps {
+//                 bat 'node --version'
+//                 bat 'npm --version'
+//             }
+//         }
+
+//         stage('Install Dependencies') {
+//             steps {
+//                 bat 'npm ci'
+//             }
+//         }
+
+//         stage('Lint') {
+//             steps {
+//                 bat 'npm run lint'
+//             }
+//         }
+
+//         stage('Typecheck') {
+//             steps {
+//                 bat 'npx tsc --noEmit'
+//             }
+//         }
+
+//         stage('Install Playwright Browsers') {
+//             steps {
+//                 bat 'npx playwright install chromium'
+//             }
+//         }
+
+//         stage('Run Playwright Tests') {
+//             steps {
+//                 catchError(
+//                     buildResult: 'FAILURE',
+//                     stageResult: 'FAILURE'
+//                 ) {
+//                     bat 'npx playwright test'
+//                 }
+//             }
+//         }
+//     }
+
+//     post {
+
+//         always {
+
+//             junit(
+//                 testResults: 'test-results/junit-results.xml',
+//                 allowEmptyResults: true
+//             )
+
+//             publishHTML([
+//                 allowMissing: true,
+//                 alwaysLinkToLastBuild: true,
+//                 keepAll: true,
+//                 reportDir: 'playwright-report',
+//                 reportFiles: 'index.html',
+//                 reportName: 'Playwright HTML Report'
+//             ])
+
+//             archiveArtifacts(
+//                 artifacts: 'test-results/**/*',
+//                 allowEmptyArchive: true,
+//                 fingerprint: true
+//             )
+//         }
+//     }
+// }
+// ```
+
+
 pipeline {
 
     agent any
+
+    environment {
+        CI = 'true'
+    }
 
     stages {
 
@@ -11,45 +99,22 @@ pipeline {
             }
         }
 
-        stage('Environment') {
-            steps {
-                bat 'node --version'
-                bat 'npm --version'
-            }
-        }
-
         stage('Install Dependencies') {
             steps {
-                bat 'npm ci'
+                sh 'npm ci'
+                sh 'npx playwright install --with-deps chromium'
             }
         }
 
-        stage('Lint') {
+        stage('TypeScript Check') {
             steps {
-                bat 'npm run lint'
+                sh 'npm run typecheck'
             }
         }
 
-        stage('Typecheck') {
+        stage('Smoke Tests') {
             steps {
-                bat 'npx tsc --noEmit'
-            }
-        }
-
-        stage('Install Playwright Browsers') {
-            steps {
-                bat 'npx playwright install chromium'
-            }
-        }
-
-        stage('Run Playwright Tests') {
-            steps {
-                catchError(
-                    buildResult: 'FAILURE',
-                    stageResult: 'FAILURE'
-                ) {
-                    bat 'npx playwright test'
-                }
+                sh 'npm run test:smoke'
             }
         }
     }
@@ -57,27 +122,23 @@ pipeline {
     post {
 
         always {
-
             junit(
-                testResults: 'test-results/junit-results.xml',
-                allowEmptyResults: true
+                allowEmptyResults: true,
+                testResults: 'test-results/results.xml'
             )
-
-            publishHTML([
-                allowMissing: true,
-                alwaysLinkToLastBuild: true,
-                keepAll: true,
-                reportDir: 'playwright-report',
-                reportFiles: 'index.html',
-                reportName: 'Playwright HTML Report'
-            ])
 
             archiveArtifacts(
-                artifacts: 'test-results/**/*',
-                allowEmptyArchive: true,
-                fingerprint: true
+                artifacts: 'playwright-report/**/*,test-results/**/*',
+                allowEmptyArchive: true
             )
+        }
+
+        success {
+            echo 'Fast CI passed'
+        }
+
+        failure {
+            echo 'Fast CI failed'
         }
     }
 }
-```
